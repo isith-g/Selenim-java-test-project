@@ -120,7 +120,7 @@ public class WebForm {
     }
 
     /**
-     *
+     * function to find a checkbox in the web page
      */
 
     public WebElement findCheckBox(){

@@ -21,12 +21,21 @@ public class MouseClicksPage {
 
     }
 
+    /**
+     * This function is used to test the left click options on the page
+     * @return a boolean flag representing the display state of the left click menu
+     */
     public boolean clickOnLeftClickMenu(){
         getElement(leftClickButton).click();
         WebElement leftClickMenu = getElement(leftClickDropDown);
         return leftClickMenu.isDisplayed();
 
     }
+
+    /**
+     *This fucntion returns the class used to test Right click options on the test page
+     * @return a boolean flag representing the display state of the right click meny
+     */
 
     public boolean clickOnRightClickMenu(){
         actions.contextClick(getElement(rightClickButton)).build().perform();

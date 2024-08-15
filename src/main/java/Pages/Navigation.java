@@ -17,6 +17,11 @@ public class Navigation {
 
     }
 
+    /**
+     *This function is present to click a page link in the test application
+     * @return A string value to assert that the correct link has been selected
+     */
+
     public String clickPageLink(){
 
         WebElement link = getElement(pageNavigation);

@@ -18,6 +18,11 @@ public class ScrollTestPage {
 
     }
 
+    /**
+     * This function is present to scroll a web page until it ends using js execution
+     *
+     */
+
     public void scrollToEnd(){
 
         JavascriptExecutor js = (JavascriptExecutor) driver;

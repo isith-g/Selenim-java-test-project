@@ -20,6 +20,11 @@ public class DragAndDropPage {
         action = new Actions(driver);
     }
 
+    /***
+     * This function drags the selected element to the target and returns the location of the
+     * dragged element and the target element
+     * @return an array of Point datatype containing the location of dragged element and the target element
+     */
     public Point[] DragElement(){
         Point[] locations = new Point[2];
         action.dragAndDrop(getElement(draggableObject),getElement(target)).build().perform();

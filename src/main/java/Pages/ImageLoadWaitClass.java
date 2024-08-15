@@ -21,6 +21,10 @@ public class ImageLoadWaitClass {
 
     }
 
+    /**
+     * This method waits until an image is loaded and returns the src attribute of the image
+     * @return a string with the src attribute of the image
+     */
     public String WaitUntilImage(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement compass = wait.until(ExpectedConditions.presenceOfElementLocated(image));

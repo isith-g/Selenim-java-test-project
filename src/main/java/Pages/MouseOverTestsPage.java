@@ -18,6 +18,11 @@ public class MouseOverTestsPage {
 
     }
 
+    /**
+     *This function is used to test the mouse over image functionality of the test pahe
+     * @ return a string representing the caption of the image on display
+     */
+
     public String mouseOverToImage(){
         actions.moveToElement(findElement(compassImg)).build().perform();
         WebElement caption = driver.findElement(RelativeLocator.with(By.tagName("div")).near(compassImg));
